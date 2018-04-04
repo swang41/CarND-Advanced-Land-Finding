@@ -109,10 +109,12 @@ Here's a [link to my video result](./out_clip.mp4)
 
 Here's a [link to my challenge video result](./challenge_out_clip.mp4), it failed when the car fully covered by the bridge.
 
+If you want to reproduce the result, you can use 'submission.ipynb'.
+
 ---
 
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+The the basic idea of this project is to threshold a clean binary map where the search algorithm and easy and correctly identify the lane pixels. The challenges I am facing is when I try to apply the pipeline on the challenge video where some lanes have shadows and dark patchs. The gradient x direction threshold fails me completely when it found many clear vertical lines. The search algorithm has no idea which one is the lane. After trying many things, I abandon gradient. I only use color space thresholding which gives me more stable result in the challenge video. However, it completely fails me again in harder challenge video. Replacing bad result with averaged last n fitted line does help for only one or two bad frame in the row.
