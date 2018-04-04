@@ -95,7 +95,7 @@ I did this in lines 230 through 251 in my code in `findLane.py`. First, I refit 
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in lines 201 through 226 in my code in `findLane.py` in the function `projectlane()`.  Here is an example of my result on a test image:
+I implemented this step in lines 201 through 226 in my code in `findLane.py` in the function `projectLane()`.  Here is an example of my result on a test image:
 
 ![alt text][image6]
 
@@ -107,7 +107,7 @@ I implemented this step in lines 201 through 226 in my code in `findLane.py` in 
 
 Here's a [link to my video result](./out_clip.mp4)
 
-Here's a [link to my challenge video result](./challenge_out_clip.mp4)
+Here's a [link to my challenge video result](./challenge_out_clip.mp4), it failed when the car fully covered by the bridge.
 
 ---
 
