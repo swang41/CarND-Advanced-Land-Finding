@@ -21,6 +21,7 @@ The goals / steps of this project are the following:
 [image5]: ./output_images/binary.jpg "Binary Thresholding"
 [image6]: ./output_images/fitted_line.jpg "fit visual"
 [image7]: ./test_images/test5.jpg "test image"
+[image8]: ./output_images/result.jpg "result"
 [video1]: ./project_video.mp4 "Video"
 [video2]: ./out_clip.mp4 "Output Video"
 
@@ -97,7 +98,7 @@ I did this in lines 230 through 251 in my code in `findLane.py`. First, I refit 
 
 I implemented this step in lines 201 through 226 in my code in `findLane.py` in the function `projectLane()`.  Here is an example of my result on a test image:
 
-![alt text][image6]
+![alt text][image8]
 
 ---
 
